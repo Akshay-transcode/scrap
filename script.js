@@ -78,7 +78,7 @@ function getRandomUserAgent() {
     return userAgents[Math.floor(Math.random() * userAgents.length)];
 }
 
-const dubaiScrap = async (url) => {
+const dubaiCategoryScrap = async (url) => {
   let browser;
   try {
     browser = await puppeteer.launch({ headless: true });
@@ -170,7 +170,7 @@ const processUrls = async () => {
       const urls = JSON.parse(data);
   
       for (const urlObj of urls) {
-        const propertyDetails = await dubaiScrap(urlObj.url);
+        const propertyDetails = await dubaiCategoryScrap(urlObj.url);
         if (propertyDetails) {
           // Append property details to the URL object
           urlObj.propertyDetails = propertyDetails;
