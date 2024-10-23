@@ -6,7 +6,7 @@ export const dubaiScrap = async () => {
   try {
     browser = await puppeteer.launch({headless: true,args:['--no-sandbox','--disable-setuid-sandbox'],ignoreDefaultArgs:['--disable-extensions']});
     const page = await browser.newPage();
-    await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36');
+    await page.setUserAgent('Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15');
 
     await page.goto('https://dubai.dubizzle.com/en/property-for-rent/', {
       waitUntil: 'networkidle2',
