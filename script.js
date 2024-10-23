@@ -1,6 +1,5 @@
 import puppeteer from 'puppeteer';
 import fs from 'fs';
-import puppeteer from 'puppeteer';
 
 export const dubaiScrap = async () => {
   let browser;
