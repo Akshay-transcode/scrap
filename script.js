@@ -1,6 +1,6 @@
 import puppeteer from 'puppeteer';
 import fs from 'fs';
-import { processUrls } from './categoryData';
+import { processUrls } from './categoryData.js';
 
 export const dubaiScrap = async () => {
   let browser;
